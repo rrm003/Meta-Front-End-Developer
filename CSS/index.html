@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <div>
+            <b>CSS Flexbox</b>
+            <br>
+            In the world of web development, creating flexible and responsive layouts is crucial to providing a seamless user
+            experience across various devices. One powerful tool that has revolutionized the way we approach layout design is CSS
+            Flexbox. In this guide, we'll explore everything you need to know to master Flexbox and elevate your web design skills.
+        </div>
+
+        <div>
+            <br>
+            <b>What is Flexbox?</b>
+            <br>
+
+            CSS Flexible Box Layout Module, commonly known as Flexbox, is a layout model that allows you to design complex layouts
+            with ease. Unlike traditional layout methods, Flexbox provides a more efficient way to distribute space among items in a
+            container, even when their size is unknown or dynamic.
+            
+        </div>
+
+        <div>
+            <br>
+            <b>Main Concepts of Flexbox</b>
+            <br><br>
+            1. <b>Flex Container Properties</b>: Flexbox introduces several properties that control the layout of the flex container,
+            such as `justify-content`, `align-items`, `flex-direction`, and `flex-wrap`. These properties allow you to define how
+            flex items are positioned and aligned within the container.
+            <br><br>
+            2. <b>Flex Item Properties</b>: Flex items can also be customized using properties like `flex-grow`, `flex-shrink`, and
+            `flex-basis`. These properties determine how flex items grow or shrink to fill available space and establish their
+            initial size.
+            <br><br>
+            3. <b>Flexbox Alignment</b>: Flexbox provides powerful alignment capabilities, allowing you to vertically and horizontally
+            align flex items within the container. This is achieved using properties like `justify-content` and `align-items`, as
+            well as their respective shorthand `align` and `justify` properties.
+        </div>
+    </div>
+    
+    <h2>FlexBox : Defualt [display: 'flex']</h2>
+    <p>To begin using Flexbox, you simply need to apply the `display: flex;` property to a container element. This tells the
+    browser to treat the container's children as flex items and enables Flexbox properties to control their layout.</p>
+    <div class="flexbox-container">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>FlexBox Center</h2>
+    <p>The justify-content: center property centers the flex items along the main axis. This means that the items will be
+    aligned in the middle of the container, with equal space on either side.</p>
+    
+    <h2>Spaced horizontally</h2>
+    <b>[display: 'flex'; justify-content: 'center'; flex-direction:'row']</b>
+    <div class="flexbox-container  flexbox-container-center">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>Spaced vertically</h2>
+    <b>[display: 'flex'; justify-content: 'center'; flex-direction:'column']</b>
+    <div class="flexbox-container  flexbox-container-col-center">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>FlexBox: Spaced Evenly</h2>
+    <p>The justify-content: space-evenly property distributes space evenly between the flex items, as well as before the first
+    item and after the last item.</p>
+    
+    <h2>Spaced horizontally</h2>
+    <b>[display: 'flex'; justify-content: 'space-evenly'; flex-direction:'row']</b>
+    <div class="flexbox-container flexbox-container-space-evenly">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>Spaced vertically</h2>
+    <b>[display: 'flex'; justify-content: 'space-evenly'; flex-direction:'column']</b>
+    <div class="flexbox-container flexbox-container-col-space-evenly">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>FlexBox: Space Between</h2>
+    <p>The justify-content: space-between property distributes the items with equal space between them, but no space at the
+    start or end of the container.</p>
+
+    <h3>Spaced horizontally</h3>
+    <b>[display: 'flex'; justify-content: 'space-between'; flex-direction:'row']</b>
+    <div class="flexbox-container flexbox-container-space-between">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h2>Spaced vertically</h2>
+    <b>[display: 'flex'; justify-content: 'space-between'; flex-direction:'column']</b>
+    <div class="flexbox-container flexbox-container-col-space-between">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+
+    <h2>FlexBox: Space Around</h2>
+    <p>The justify-content: space-around property distributes space around the flex items. This means that the space before the
+    first item and after the last item will be half the size of the space between items.</p>
+    <br>
+
+    <h3>Spaced horizontally</h3>
+    <b>[display: 'flex'; justify-content: 'space-around'; flex-direction:'row']</b>
+    <div class="flexbox-container flexbox-container-space-around">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>
+
+    <h3>Spaced vertically</h3>
+    <b>[display: 'flex'; justify-content: 'space-around'; flex-direction:'column']</b>
+    <div class="flexbox-container flexbox-container-col-space-around">
+        <div class="flexbox-item"> 1 </div>
+        <div class="flexbox-item"> 2 </div>
+        <div class="flexbox-item"> 3 </div>
+        <div class="flexbox-item"> 4 </div>
+        <div class="flexbox-item"> 5 </div>
+    </div>    
+
+    <p>
+        <b>Conclusion</b>
+        <br>
+        CSS Flexbox is a powerful layout model that simplifies the creation of flexible and responsive web layouts. By mastering
+        the concepts and properties of Flexbox, you can take your web design skills to the next level and create visually
+        stunning and user-friendly interfaces.
+        <br>
+        In this guide, we've only scratched the surface of what Flexbox can do. I encourage you to dive deeper into its features
+        and experiment with different layout patterns to unleash its full potential in your projects.
+        <br><br>
+        Happy coding!
+    </p>
+</body>
+</html>
