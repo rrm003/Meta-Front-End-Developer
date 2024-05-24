@@ -21,6 +21,12 @@ header .titlebar {
     width: 100%;
 }
 
+.titlebar img{
+    width: 50%;
+    height: auto;
+    margin: 2rem 0;
+}
+
 .title h1{
     font-size: 3rem;
     font-family: cursive;
@@ -33,10 +39,10 @@ header .titlebar {
 }
 
 header nav{
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color: #fbf6ef;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #393e41;
 }
 
 header nav ul{
@@ -59,21 +65,48 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-size: 1.2rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 main .banner{
     display: block;
     margin: auto;
     width: 100%;
+    position: relative;
 }
 
-.banner img {
-    display: block;
-    max-width: 100%;
+.banner  img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
 }
+
+.banner .banner-text{
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 3%;
+}
+
+.banner .banner-text h1{
+    font-size: 3rem;
+    color: whitesmoke;
+    font-family: cursive;
+    left: 0;
+}
+
+.banner .banner-text p{
+    font-size: 1rem;
+    color: rgb(228, 222, 221);
+    font-family: sans-serif;
+    font-weight: 900;    
+}
+
 
 .article-container{
     margin: 1rem .5rem;
@@ -84,28 +117,44 @@ main .banner{
 }
 
 article{
-    background-color: #dfd0c1;
+    background-color: #e0c4a7;
     border-radius: 8px;
     padding: 1rem;
     text-align: left;
     font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article h2{ 
+    font-size: 1.5rem;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+article a{
+    margin-top: 1rem;
+    color: blue;
 }
 
 footer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border: solid;
-    border-radius: 5px;
-    border-color: #393e41;
-    background-color: #393e41;
-    color: #e7d0b8;
 }
 
 footer p{
+    grid-gap: 1rem;
     font-size: 1rem;
-    color: #dfd0c1;
+    font-weight: 700;
+    font-family: monospace;
 }
